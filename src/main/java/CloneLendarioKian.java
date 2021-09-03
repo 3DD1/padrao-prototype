@@ -8,6 +8,16 @@ public class CloneLendarioKian implements Cloneable {
     private int temperament;
     private int vitality;
 
+    public CloneLendarioKian(String father, String mother, String color, int bodyWeight, int persistence, int temperament, int vitality) {
+        this.father = father;
+        this.mother = mother;
+        this.color = color;
+        this.bodyWeight = bodyWeight;
+        this.persistence = persistence;
+        this.temperament = temperament;
+        this.vitality = vitality;
+    }
+
     public String getFather() {
         return father;
     }
@@ -64,10 +74,17 @@ public class CloneLendarioKian implements Cloneable {
         this.vitality = vitality;
     }
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public CloneLendarioKian clone() throws CloneNotSupportedException {
+        CloneLendarioKian kianClone = (CloneLendarioKian) super.clone();
+        return kianClone;
     }
 
 
 
 }
+/*Referencia*/
+/*https://en.wikipedia.org/wiki/Kian_(bull)
+*https://www.wikizero.com/en/Kian_(bull)
+* https://apps.crv4all.com/siresearch/us/detail/background/NLDM000207288005
+*
+* */
